@@ -1,4 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {section}{\numberline {2}Purity Requirements}{3}{section.2}
 \contentsline {section}{\numberline {3}Methodology}{3}{section.3}
-\contentsline {section}{\numberline {4}Purity Measurement}{8}{section.4}
+\contentsline {section}{\numberline {4}Purity Measurement}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}RGA Partial Pressure Measurement}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Correcting for RGA Gain Drift}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Correcting for Flow Rate}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Gain and Flow Corrected Figure of Merit}{11}{subsection.4.4}

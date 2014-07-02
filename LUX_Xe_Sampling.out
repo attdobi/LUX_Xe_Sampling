@@ -2,3 +2,7 @@
 \BOOKMARK [1][-]{section.2}{Purity Requirements}{}% 2
 \BOOKMARK [1][-]{section.3}{Methodology}{}% 3
 \BOOKMARK [1][-]{section.4}{Purity Measurement}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{RGA Partial Pressure Measurement}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Correcting for RGA Gain Drift}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Correcting for Flow Rate}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Gain and Flow Corrected Figure of Merit}{section.4}% 8

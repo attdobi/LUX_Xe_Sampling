@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 JUN 2014 23:40
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  2 JUL 2014 00:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -466,31 +466,20 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<figures/Basic_ColdTrap.png, id=51, 549.252pt x 266.4354pt>
+<figures/Basic_ColdTrap.png, id=71, 549.252pt x 266.4354pt>
 File: figures/Basic_ColdTrap.png Graphic file (type png)
 
 <use figures/Basic_ColdTrap.png>
 Package pdftex.def Info: figures/Basic_ColdTrap.png used on input line 149.
-(pdftex.def)             Requested size: 341.43306pt x 165.62323pt.
+(pdftex.def)             Requested size: 284.52756pt x 138.01868pt.
  [4 <./figures/Basic_ColdTrap.png>]
-<figures/SamplingLocations.pdf, id=59, 1378.14874pt x 621.32124pt>
-File: figures/SamplingLocations.pdf Graphic file (type pdf)
-
-<use figures/SamplingLocations.pdf>
-Package pdftex.def Info: figures/SamplingLocations.pdf used on input line 157.
-(pdftex.def)             Requested size: 341.43306pt x 153.9268pt.
-
-<figures/SAM_Diagram.pdf, id=60, 794.97pt x 614.295pt>
+<figures/SAM_Diagram.pdf, id=81, 794.97pt x 614.295pt>
 File: figures/SAM_Diagram.pdf Graphic file (type pdf)
 
 <use figures/SAM_Diagram.pdf>
 Package pdftex.def Info: figures/SAM_Diagram.pdf used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 263.84175pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5] [6 <./figures/SamplingLocations.pdf> <./figures/SAM_Diagram.pdf>]
+ [5 <./figures/SAM_Diagram.pdf>] [6]
 Package epstopdf Info: Source file: <figures/2013-June-05_Cal.eps>
 (epstopdf)                    date: 2014-06-24 23:15:20
 (epstopdf)                    size: 55803 bytes
@@ -503,7 +492,7 @@ s-converted-to.pdf figures/2013-June-05_Cal.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/2013-June-05_Cal-eps-converted-to.pdf, id=708, 518.93875pt x 413.545pt
+<figures/2013-June-05_Cal-eps-converted-to.pdf, id=718, 518.93875pt x 413.545pt
 >
 File: figures/2013-June-05_Cal-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/2013-June-05_Cal-eps-converted-to.pdf>
@@ -511,25 +500,131 @@ Package pdftex.def Info: figures/2013-June-05_Cal-eps-converted-to.pdf used on
 input line 183.
 (pdftex.def)             Requested size: 369.88582pt x 294.78006pt.
  [7 <./figures/2013-June-05_Cal-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8] [9]
+Package epstopdf Info: Source file: <figures/SAM_RGA_Gain_Run03.eps>
+(epstopdf)                    date: 2014-07-01 09:04:45
+(epstopdf)                    size: 50480 bytes
+(epstopdf)             Output file: <figures/SAM_RGA_Gain_Run03-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2014-07-01 09:05:33
+(epstopdf)                    size: 34231 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/SAM_RGA_Gain_Run03-
+eps-converted-to.pdf figures/SAM_RGA_Gain_Run03.eps>
+(epstopdf)             \includegraphics on input line 259.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SAM_RGA_Gain_Run03-eps-converted-to.pdf, id=746, 524.96124pt x 413.545
+pt>
+File: figures/SAM_RGA_Gain_Run03-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/SAM_RGA_Gain_Run03-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SAM_RGA_Gain_Run03-eps-converted-to.pdf used o
+n input line 259.
+(pdftex.def)             Requested size: 284.52756pt x 224.1439pt.
+Package epstopdf Info: Source file: <figures/SAM_RGA_Cal_Run03_corr_flow.eps>
+(epstopdf)                    date: 2014-07-02 00:11:13
+(epstopdf)                    size: 17397 bytes
+(epstopdf)             Output file: <figures/SAM_RGA_Cal_Run03_corr_flow-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2014-07-01 09:59:17
+(epstopdf)                    size: 12218 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/SAM_RGA_Cal_Run03_c
+orr_flow-eps-converted-to.pdf figures/SAM_RGA_Cal_Run03_corr_flow.eps>
+(epstopdf)             \includegraphics on input line 270.
+runsystem(epstopdf --outfile=figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-
+to.pdf figures/SAM_RGA_Cal_Run03_corr_flow.eps)...executed.
+
+Package epstopdf Info: Result file: <figures/SAM_RGA_Cal_Run03_corr_flow-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2014-07-02 00:12:08
+(epstopdf)                    size: 12215 bytes.
+
+<figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-to.pdf, id=748, 520.94624pt 
+x 421.575pt>
+File: figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-to.p
+df used on input line 270.
+(pdftex.def)             Requested size: 284.52756pt x 230.25235pt.
+
+[10 <./figures/SAM_RGA_Gain_Run03-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/SAM_RGA_Cal_Run03.eps>
+(epstopdf)                    date: 2014-06-28 12:45:29
+(epstopdf)                    size: 18954 bytes
+(epstopdf)             Output file: <figures/SAM_RGA_Cal_Run03-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2014-07-01 08:49:46
+(epstopdf)                    size: 11938 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/SAM_RGA_Cal_Run03-e
+ps-converted-to.pdf figures/SAM_RGA_Cal_Run03.eps>
+(epstopdf)             \includegraphics on input line 281.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SAM_RGA_Cal_Run03-eps-converted-to.pdf, id=761, 542.025pt x 413.545pt>
+File: figures/SAM_RGA_Cal_Run03-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/SAM_RGA_Cal_Run03-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SAM_RGA_Cal_Run03-eps-converted-to.pdf used on
+ input line 281.
+(pdftex.def)             Requested size: 284.52756pt x 217.08913pt.
+Package epstopdf Info: Source file: <figures/SAM_RGA_Cal_Run03_corr.eps>
+(epstopdf)                    date: 2014-06-28 12:31:20
+(epstopdf)                    size: 14782 bytes
+(epstopdf)             Output file: <figures/SAM_RGA_Cal_Run03_corr-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2014-07-01 08:49:47
+(epstopdf)                    size: 10719 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/SAM_RGA_Cal_Run03_c
+orr-eps-converted-to.pdf figures/SAM_RGA_Cal_Run03_corr.eps>
+(epstopdf)             \includegraphics on input line 282.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SAM_RGA_Cal_Run03_corr-eps-converted-to.pdf, id=762, 532.99126pt x 421
+.575pt>
+File: figures/SAM_RGA_Cal_Run03_corr-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use figures/SAM_RGA_Cal_Run03_corr-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SAM_RGA_Cal_Run03_corr-eps-converted-to.pdf us
+ed on input line 282.
+(pdftex.def)             Requested size: 284.52756pt x 225.05472pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./figures/SAM_RGA_Cal_Run03_corr_flow-eps-converted-to.pdf>]
+
+LaTeX Warning: Text page 12 contains only floats.
+
+
+Overfull \vbox (5.14383pt too high) has occurred while \output is active []
+
+
+[12 <./figures/SAM_RGA_Cal_Run03-eps-converted-to.pdf> <./figures/SAM_RGA_Cal_R
+un03_corr-eps-converted-to.pdf>]
 No file LUX_Xe_Sampling.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
  (./LUX_Xe_Sampling.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
 Package rerunfilecheck Info: File `LUX_Xe_Sampling.out' has not changed.
-(rerunfilecheck)             Checksum: B6D7465451553DAA59FCBCEA40AFEDAE;200.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
+(rerunfilecheck)             Checksum: E9B42B28DA9C4DD51B306BD3F3E665BE;520.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 334.
  ) 
 Here is how much of TeX's memory you used:
- 7965 strings out of 493633
- 117854 string characters out of 3143378
- 217358 words of memory out of 3000000
- 11123 multiletter control sequences out of 15000+200000
+ 8009 strings out of 493633
+ 119061 string characters out of 3143378
+ 221762 words of memory out of 3000000
+ 11148 multiletter control sequences out of 15000+200000
  11760 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 36i,6n,38p,2601b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,2657b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
@@ -540,10 +635,10 @@ cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
 l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
 texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on LUX_Xe_Sampling.pdf (8 pages, 1297284 bytes).
+Output written on LUX_Xe_Sampling.pdf (13 pages, 1227253 bytes).
 PDF statistics:
- 764 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 18 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 841 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
