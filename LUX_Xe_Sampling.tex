@@ -29,6 +29,7 @@
 \newcommand{\meth}{methane\xspace}
 \newcommand{\He}{\ensuremath{\rm He}\xspace}
 \newcommand{\water}{\ensuremath{\rm H_2O}\xspace}
+\newcommand{\Htwo}{\ensuremath{\rm H_2}\xspace}
 \newcommand{\AMU}{\ensuremath{\rm u}\xspace}
  
 \newcommand{\ppm}{\ensuremath{\rm \cdot10^{-6}~g/g}\xspace}
@@ -116,6 +117,7 @@ We describe a xenon purity analysis system we have developed and used for the LU
 
 \end{frontmatter}
 
+\newpage
 \tableofcontents
 \newpage
 
@@ -185,7 +187,7 @@ Note that to achieve the best sensitivity, the highest possible flow rate should
 \label{fig:RGA_Calibration}
 \end{figure}
 
-\section{Purity Measurement}
+\section{Purity Figure of Merit and Calibration}
 
 % 1) Know the flow rate and wait for signals to stabilize. [Coldtrap and Purifier paper].
    %2) Finite sample with declining input pressure. Use peak partial pressure normalized to flow rate [EXO and Kr paper].
@@ -228,7 +230,7 @@ Before discussing calibration and purity measurements we must consider the stabi
 
 \begin{figure}[h!]\centering
 \includegraphics[width=100mm,]{figures/SAM_RGA_Gain_Run03.eps}
-\caption{Xenon vapor pressure as measured by the RGA and CCG over the course of the LUX underground science run.}
+\caption{Xenon vapor pressure as measured by the RGA and CCG. The dashed, vertical magenta lines represent the course of the LUX underground science run used for the first WIMP limit published in [ref].}
 \label{fig:RGA_Gain}
 \end{figure}
 
@@ -245,57 +247,77 @@ The measurements described in this article differ from that of Ref. [coldtrap pa
 
 \subsection{Gain and Flow Corrected Figure of Merit}
 
-To monitor for daily variations in the system response, including changes in the RGA gain, we periodically calibrate the analysis system using our cylinder of calibration xenon gas. After performing a periodic calibration we normalize the integral of the RGA partial pressure for a given species to both flow and the xenon partial pressure. First, the flow normalization is to remove the linear dependance of the signal on flow. Secondly, we correct for a drift in the RGA gain by normalizing to the partial pressure of \Xe which is the one true constant between all samples as it represents the xenon ice vapor pressure at 77 K in the coldtrap system (given a fixed CCG pressure). Using these normalizations we find repeatable measurements for a given impurity concentration over a range of flows and several months of RGA calibration. (will go into more detail about N2,H2 ... and the well behaved CH4, Ar, Kr).
-Figure \ref{fig:RGA_Corr_Cal} shows the variations in the system response to various impurities for out calibration xenon over a period of eight months with and without the xenon vapor pressure gain correction.  
+To monitor for daily variations in the system response, including changes in the RGA gain, we periodically calibrate the analysis system using our cylinder of calibration xenon gas. After performing a periodic calibration we normalize the integral of the RGA partial pressure for a given species to both flow and the xenon partial pressure. First, the flow normalization is to remove the linear dependance of the signal on flow. Secondly, we correct for a drift in the RGA gain by normalizing to the partial pressure of \Xe which is the one true constant between all samples as it represents the xenon ice vapor pressure at 77 K in the coldtrap system (given a fixed CCG pressure).  
 
-\begin{figure}[h!]\centering
-\includegraphics[width=100mm,]{figures/SAM_RGA_Cal_Run03.eps}
-\includegraphics[width=100mm,]{figures/SAM_RGA_Cal_Run03_corr.eps}
-\caption{Top: Leak rate normalized RGA signals for several calibration species over eight months, the left axis shows the xenon vapor pressure measured by the RGA and cold cathode gauge (CCG). We find a strong correlation between the xenon vapor pressure and the variations in the leak rate normalized signals for N2, CH4, Ar, Kr (Helium...). Bottom: Gain corrected and leak rate normalized signals for calibration xenon over eight months.}
-\label{fig:RGA_Corr_Cal}
-\end{figure}
+The purity measurement is made as follows, a full RGA scan of a typical calibration is shown in Figure \ref{fig:RGA_Calibration} . First, before the flow is induced the backgrounds of all impurity species are averaged for 60 seconds to record the baselines. Second, a command is sent to actuate a pneumatic valve opening a path from the sampling volume through one of the three leak valves into the coldtrap and RGA (see Figure []). Once the valve feedback confirms the open state, the code waits 30 seconds to establish a stable flow and mitigate any transient effects. Third, all RGA signals and the flow rate are averaged over 150 seconds while the xenon flows from the sampling volume through the leak valve. During the measurement time about 60-70\% of the sample is consumed and as the sample pressure depletes the flow rate diminishes thus, it is not practical to drag out the sample measurement to the last drop. Finally, the pneumatic value in front of the leak valve is shut cutting off flow to the cold trap. The signals on the RGA a measured for an additional ten minutes to ensure that the initial background levels return. It is important to note that all measurement timing is controlled with pneumatic valves via a C script on a slow control computer, also the flow settings dialed in on the three leak valves are permanently fixed. These measures were taken for the LUX analysis system to help mitigate systematic uncertainties accosted with a human opening and closing the sensitive leak valves at measurement. In our early trials the flow of a given dial setting, after closing and reopening, was found to vary as much as 20\% [coldtrap ref]. 
 
-
-
-The measurement is made as follows, a full RGA scan of a typical calibration is shown in Figure \ref{fig:RGA_Calibration} . First, before the flow is induced the backgrounds of all impurity species are averaged for 60 seconds to record the baselines. Second, a command is sent to actuate a pneumatic valve opening a path from the sampling volume through one of the three leak valves into the coldtrap and RGA (see Figure []). Once the valve feedback confirms the open state, the code waits 30 seconds to establish a stable flow and mitigate any transient effects. Third, all RGA signals and the flow rate are averaged over 150 seconds while the xenon flows from the sampling volume through the leak valve. During the measurement time about 60-70\% of the sample is consumed and as the sample pressure depletes the flow rate diminishes thus, it is not practical to drag out the sample measurement to the last drop. Finally, the pneumatic value in front of the leak valve is shut cutting off flow to the cold trap. The signals on the RGA a measured for an additional ten minutes to ensure that the initial background levels return. It is important to note that all measurement timing is controlled with pneumatic valves via a C script on a slow control computer, also the flow settings dialed in on the three leak valves are permanently fixed. These measures were taken for the LUX analysis system to help mitigate systematic uncertainties accosted with a human opening and closing the sensitive leak valves at measurement. In our early trials the flow of a given dial setting, after closing and reopening, was found to vary as much as 20\% [coldtrap ref]. 
-
-The calibration figure of merit is defined by equation \ref{eq:Cal_FM}, it is the gain corrected leak rate normalized RGA signal per \ppb of concentration for a given impurity species. All purity measurements are also normalized to flow rate and then corrected for the gain shift by taking the ratio of xenon vapor pressure. The purity measurement is divided by the pervious calibration figure of merit and converted into a impurity concentration value in units of ppb (1\ppb), given in equation \ref{eq:Purity_FM}. We take the variation in calibration figure of merit before and after a sample for each individual impurity species as a systematic uncertainty in the measurement. This uncertainty represents systematics in gain drift, the RGA's response to xenon vapor pressure, the potential for small errors in calibration. 
+ For a know initial mass fraction ($\rm \omega_i$ [g/g]) the calibration figure of merit is defined by equation \ref{eq:Cal_FM}, defined as the gain corrected leak rate normalized RGA signal per 1\ppb for a given impurity species. All subsequent purity measurements are normalized to flow rate and then corrected gain by taking the ratio of xenon vapor pressure. The purity measurement is divided by the pervious calibration figure of merit and converted into a impurity concentration value in units of ppb (1\ppb), given in equation \ref{eq:Purity_FM}. We take the variation in calibration figure of merit before and after a sample for each individual impurity species as a systematic uncertainty in the measurement. This uncertainty represents systematics in gain drift, the RGA's response to xenon vapor pressure, the potential for small errors in calibration. 
 
 \begin{equation}
-\rm Cal=\left<RGA[pTorr]\right>\cdot\left<Flow[SLPM]\right>^{-1}\cdot\left<XeP[pTorr]\right>^{-1}\cdot\left<Concentration[ppb]\right>^{-1}
+\rm \omega_i=\frac{m_i[g]}{m_{Xe}[g]}
+\label{eq:Concentration}
+\end{equation}
+
+\begin{equation}
+\rm Cal_i=\left<RGA[pTorr]\right>\cdot\left<Flow[SLPM]\right>^{-1}\cdot\left<XeP[pTorr]\right>^{-1}\cdot\left<\omega_i[ppb]\right>^{-1}
 \label{eq:Cal_FM}
 \end{equation}
 
 \begin{equation}
-\rm Cal=\left<RGA[pTorr]\right>\cdot\left<Flow[SLPM]\right>^{-1}\cdot\left<XeP[pTorr]\right>^{-1}\cdot\left<Cal[ppb/SLPM]\right>^{-1}
+\rm \omega_j=\left<RGA[pTorr]\right>\cdot\left<Flow[SLPM]\right>^{-1}\cdot\left<XeP[pTorr]\right>^{-1}\cdot\left<Cal_i[ppb/SLPM]\right>^{-1} 
 \label{eq:Purity_FM}
 \end{equation}
+\\
 
-%\small
-%\begin{equation}
-%\rm Cal_{LRN}=\left(\frac{\mathlarger{\int_{t_0}^{t_1}} \mathrm{RGA_{Pressure}}\,\mathrm{d}t}{\mathlarger{\int_{t_0}^{t_1}} \mathrm{}\,\mathrm{d}t}\right)
-%\mathlarger\times\left(\frac{\mathlarger{\int_{t_0}^{t_1}} \mathrm{Flow}\,\mathrm{d}t}{\mathlarger{\int_{t_0}^{t_1}} \mathrm{}\,\mathrm{d}t}\right)^{-1}
-%\mathlarger\times\left(\frac{\mathlarger{\int_{t_0}^{t_1}} \mathrm{Xe_{Pressure}}\,\mathrm{d}t}{\mathlarger{\int_{t_0}^{t_1}} \mathrm{}\,\mathrm{d}t}\right)^{-1}
-%\label{eq:Cal_FM}
-%\end{equation}
-%\normalsize
+Using Gain corrected and flow rate normalized calibration figure of merit  (G-FRN) the measurements for a given impurity concentration are repeatable over a range of flows, RGA gains and over several months of calibrations. Figure \ref{fig:RGA_Corr_Cal} shows the variations in the system response to various impurities for out calibration xenon over a period of eight months with and without the xenon vapor pressure gain correction. 
+The calibration figure of merit per ppb (g/g) for several impurities over a eight month period, with and without the additional gain normalization is also listed in Table \ref{table:Cal_Var}. We find that the xenon vapor pressure measured by the CCG is stable to within 3\% for all calibration, as it should since it indirectly measures the vapor pressure of xenon ice at 77K. The xenon pressure, as measured by the RGA, noticeably drifts and tracks the other mass measurements while the CCG pressure remains fixed, indicating changes in the RGA gain. When normalizing the leak rate corrected figure of merit to the xenon vapor pressure there is a large improvement in resolution. The resolution relative to the mean improves from being over 100\% to about 10\%, with the exception of \Ntwo and \He which may have additional systematics discussed in [ link]. We find that over eight months of calibrations the calibration figure of merit per ppb for \Ntwo, \Ar, \Kr, \CHfour, \He are stable to within 39\%, 10\%, 11\%, 9\%, 41\% respectively.
 
-% Add a table showing mean figure of merit per ppb, and stability over 1 year Gain-LRN
-
-
-%After calibrating all purity measurements are normalized to flow rate and and compared to the pervious leak rate normalized calibration. The signal is then corrected for the gain shift by taking the ratio of xenon vapor pressure during the calibration and the analysis. After correcting for flow rate and RGA gain the remaining signal is simply proportional to the purity concentration of the xenon gas sample.
-%To account for these variations, we normalize the signal to the corresponding xenon vapor pressure, and we take the the deviation from the xenon vapor pressure in calibration measurements to be a systematic uncertainty. For most of our measurements, this is the dominating uncertainty in the impurity concentration measurement.
-
-%Secondly, to account for the species-dependent response of the analysis system, including factors such as the probability that each impurity survives the cold trap and its ionization potential at the RGA filament, we apply a relative species response factor as listed in Table 1. These species response factors were empirically determined by comparing each species to O2 in separate bench test measurements at constant input pressure, and are valid to within 30\%.
+\begin{figure}[h!]\centering
+\includegraphics[width=100mm,]{figures/SAM_RGA_Cal_Run03.eps}
+\includegraphics[width=100mm,]{figures/SAM_RGA_Cal_Run03_corr.eps}
+\caption{Top: Leak rate normalized RGA signals for several calibration species over eight months, the left axis shows the xenon vapor pressure measured by the RGA and cold cathode gauge (CCG). The is a strong correlation between the xenon vapor pressure and the leak rate normalized figure of merit. Bottom: Gain corrected and leak rate normalized figure of merit for calibration xenon over eight months.}
+\label{fig:RGA_Corr_Cal}
+\end{figure}
 
 
-% \begin{figure}[h!]\centering
-%\includegraphics[width=77mm]{LY_180_Tritium_Dec_2013_Light_Yield}
-%\caption{}
-%\label{fig:L_Q_Yield_180_un}
-%\end{figure}
+\begin{table}[h!]%\caption{Nonlinear Model Results}\centering\begin{tabular}{|c| |c| |c| |c| |c| |c|}\hlineSpecies & AMU & $\rm Cal_{FM}$ w/o gain & $\rm Cal_{FM}$ w/o gain & $\rm Cal_{FM}$ & $\rm Cal_{FM}$ \\ 
+ 		  &		   & $\rm \mu$ 				   & $\rm \sigma/\mu$		 &	$\rm \mu\times 1000$			 &$\rm \sigma/\mu$ 	 \\[0.5ex] % inserts table %heading\hline\Ntwo		& 28			& 5720	&  1.47	& 16.5	& 	0.39 \\ \hline\Ar			& 40			& 1840	&  1.08	& 6.0	&	0.10 \\ \hline\Kr			& 84 (57.0\%)	& 1290	&  1.20	& 3.9	&	0.11 \\ \hline
+$\rm Kr^*$& 82,84,86 (85.6\%)& 1890 &  1.24	 & 5.7	&	0.12 \\ \hline
+\CHfour	&15			& 3890	&  1.01	& 13.0	&	0.09 \\ \hline
+\He			& 4				& 6670	&  1.06	& 21.6	&	0.41 \\ \hline \hline \hline
+			&				& $\rm\left<Pressure\right>$ (pTorr)	&	$\rm \sigma/\mu$	&	& \\ \hline
+Xe			& 132			& $3.04\times10^5$	&  1.01	&	--	&	--	\\ \hline
+CCG		& n/a			& $6.03\times10^6$	& 0.031	&	--	& -- \\ [0.5ex]\hline\end{tabular}
+\caption{The calibration figure of merit per ppb (g/g) for several impurities over a eight month period, with and without the additional gain normalization (also shown in Figure \ref{fig:RGA_Corr_Cal}). We find that the xenon vapor pressure measured by the CCG is stable to within 3\% for all calibration. When normalizing the figure of merit to the xenon vapor pressure there is a large improvement in resolution. The resolution relative to the mean improves from being over 100\% to about 10\%, with the exception of \Ntwo and \He which may have additional systematics discussed in [ link]. }\label{table:Cal_Var}\end{table}
 
 
+\subsection{\Otwo and \Htwo Figure of merit}
+
+
+Preparing xenon samples with low concentrations of \Otwo and \Htwo have proven to be difficult. Mainly because over time as the calibration bottle sits idle the stainless steel container absorbs \Otwo and continuously out-gasses \Htwo. To account for the species-dependent response of the analysis system, including factors such as the probability that each impurity survives the cold trap and its ionization potential at the RGA filament, we apply a relative species response factor relative to nitrogen. For a given concentration of \Ntwo we have empirically observed that the equivalent RGA response is suppressed by a factor of 1.6 [ref] further, we have shows the linear response of the system to \Otwo from 0.1\ppb to 1\ppm [ref]. We have tested this conversion factor by calibrating with a sample prepared with 1\ppm of \Ntwo and \Otwo stored in an aluminum cylinder to minimize \Otwo absorption. The application of this conversion factor from \Ntwo to \Otwo response is valid to within 30\% and has always been sensible for samples containing a slight known air contamination from which the \Ntwo, \Otwo, \Ar ratio can be used to scrutinize the calibration, constituting 75.5\%, 23.2\% and 1.3\% of air by mass, respectively [ref]. (show measurements from Nov-Dec 2012 calibrations with O2 and N2?)
+
+We also approximate the \Htwo concentration of every sample multiplying the helium figure of merit by a by a factor, corresponding to the factor of two difference in the molar mass relative to helium when measuring in units of ppb g/g. Naively the RGA partial pressure response to a given mass concentration for a fixed ionization potential should be proportional to the number of moles of a given species. The hydrogen measurement may be off by up to a factor of four however, \Htwo out-gasses indefinitely from stainless steel and it is good practice to track it's relative abundance overtime. 
+
+
+\section{Applications of Gas Purity Analysis}
+
+We have found many useful applications for having the automated xenon sampling system integrated with the LUX circulation system. Now that we have discussed the methodology and calibrations we can discuss the results of the over 300 samples taken over the course of the underground science run. The primary purpose of the gas sampling system was to screen xenon for the accumulation of radioactive nobel isotopes present in the air, such as \KrR and \ArR for which dark matter experiments go through great lengths to remove from commercially available xenon [ref].  Prior to filling the LUX detector  all xenon storage cylinders were screened to ensure they met purity and radioactive background requirements, then the xenon was monitored daily over  the course of the science run. For the case of an air leak into the xenon circulation system impurities that degrade electron drift length, such as \Otwo \Ntwo, are continuously removed by standard gettering technology [] while noble elements such as \Ar and \Kr accumulate. Experiments that only monitor liquid purity via the electron drift length are thus blind to small air leaks until the radioactive decay of \KrR begins to show up in data analysis, this scenario cost the Xenon100 experiment a year for \Kr removal.
+The secondary purpose of the gas sampling system is to track the removal of electronegative impurities such as \Ntwo and \Otwo that impede electron drift in the liquid xenon, a large drift length ($\sim$0.5 m) is necessary for TPC operation. The roll of the getter, installed in all xenon TPCs, is to remove electronegative impurities and hydrocarbons that outgas from detector components. The getters used can become saturated with impurities or suffer a loss of performance at high flow rate []. We have place sampling ports at the inlet and outlet of the getter and use weekly samples to monitor the getter's health by monitoring the penetration of \Ntwo, \Otwo or hydrocarbons via \Htwo and \CHfour. During a methane injection, prior to our tritiated methane calibrations, we monitored for the presence of H and C at the getters outlet to ensure the tritated methane wouldn't be cracked by the getter and released as bare tritium into the LUX detector, bare tritium being 10x more penetrating than tritiated methane into plastics [ref]. 
+Finally, we have been able to use the sampling system to track the emanation of several species from detector components and measure solubility of impurities in xenon. Prior to the science run the detector was filled with gaseous xenon and circulated for a month, during which time extensive studies were done on the emanation of impurities for the teflon and polyethylene components. Solubilities for the other nobel gases in liquid xenon could also be extracted by comparing the initial concentration of the xenon storage bottles to the the concentration in the xenon gas after liquefaction. Limited data exists on solubilities of impurities in xenon and the measurements made with the LUX detector will be crucial for inferring liquid purity from the measured gas phase purity in future experiments.
+
+Rn diffusion from air? ... we can set a limit from the Ar accumulation.
+
+\subsection{Xenon Inventory Screening}
+...plots for the Case gas chromatography
+
+measurements of bottles onsite.
+
+
+\subsection{\KrR Monitoring}
+
+
+
+... plots for LUX science run
 
 \bibliographystyle{thesisbibstyle}
 \bibliography{TritiumBib}
