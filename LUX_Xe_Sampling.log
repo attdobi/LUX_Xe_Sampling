@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  2 JUL 2014 23:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  5 JUL 2014 14:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -631,30 +631,37 @@ Overfull \vbox (5.14383pt too high) has occurred while \output is active []
 un03_corr-eps-converted-to.pdf>] [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 358.
+(hyperref)                removing `math shift' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 358.
+(hyperref)                removing `superscript' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 358.
+(hyperref)                removing `math shift' on input line 362.
 
 No file LUX_Xe_Sampling.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
 [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./LUX_Xe_Sampling.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
-Package rerunfilecheck Info: File `LUX_Xe_Sampling.out' has not changed.
-(rerunfilecheck)             Checksum: 4EF74177379BABBB1EEC97E8DF710B6B;825.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+
+
+Package rerunfilecheck Warning: File `LUX_Xe_Sampling.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `LUX_Xe_Sampling.out':
+(rerunfilecheck)             Before: 4EF74177379BABBB1EEC97E8DF710B6B;825
+(rerunfilecheck)             After:  69178AB7FF218DCEBCAEFA65C64EF055;992.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
  ) 
 Here is how much of TeX's memory you used:
- 8026 strings out of 493633
- 119264 string characters out of 3143378
+ 8028 strings out of 493633
+ 119292 string characters out of 3143378
  222499 words of memory out of 3000000
  11155 multiletter control sequences out of 15000+200000
  11760 words of font info for 47 fonts, out of 3000000 for 9000
@@ -670,10 +677,10 @@ cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
 l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
 texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on LUX_Xe_Sampling.pdf (17 pages, 1242308 bytes).
+Output written on LUX_Xe_Sampling.pdf (17 pages, 1243721 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 558 compressed objects within 6 object streams
+ 46 named destinations out of 1000 (max. 500000)
  132 words of extra memory for PDF output out of 10000 (max. 10000000)
 
